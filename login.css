@@ -1,0 +1,146 @@
+body 
+    /* Bordered form */
+form {
+   
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: -1%;
+    margin-right: 5%;
+    margin-block-end: 2%;
+    padding-left: 25%;
+    margin-top: 0%;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 50%;
+    
+   
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Login Form with Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="relative flex flex-col justify-center min-h-screen overflow-hidden">
+      <div class="w-full p-6 m-auto bg-white rounded shadow-lg ring-2 ring-purple-800/50 lg:max-w-md">
+        <h1 class="text-3xl font-semibold text-center text-purple-700">LOGO</h1>
+
+        <form class="mt-6">
+          <div>
+            <label for="email" class="block text-sm text-gray-800">Email</label>
+            <input type="email"
+              class="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              placeholder="Email Address">
+            <span class="inline-flex text-sm text-red-600">These credentials do not match our records.</span>
+          </div>
+          <div class="mt-4">
+            <div>
+              <label for="password" class="block text-sm text-gray-800">Password</label>
+              <input type="password"
+                class="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40">
+              <span class="inline-flex text-sm text-red-700">Password must be 8 characters</span>
+            </div>
+            <a href="#" class="text-xs text-gray-600 hover:underline">Forget Password?</a>
+
+          </div>
+          <div class="mt-6">
+            <button
+              class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+              Login
+            </button>
+          </div>
+        </form>
+        <p class="mt-8 text-xs font-light text-center text-gray-700"> Don't have an account? <a href="#"
+            class="font-medium text-purple-600 hover:underline">Sign up</a></p>
+
+      </div>
+  </body>
+
+</html>
